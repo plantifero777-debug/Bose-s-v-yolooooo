@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssemblyName>BossZeepvolution</AssemblyName>
+    <RootNamespace>BossZeepvolution</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);CS8981;CS0108;CS0114</NoWarn>
+  </PropertyGroup>
+
+  <!-- Las DLL de TShock 6.2.1 las descarga el workflow de GitHub a ./libs (o cópialas a mano) -->
+  <ItemGroup>
+    <Reference Include="libs/*.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
